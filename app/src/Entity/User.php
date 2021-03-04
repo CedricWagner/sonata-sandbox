@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Umbrella\AdminBundle\Entity\BaseUser;
@@ -32,4 +33,45 @@ class User extends BaseUser
      * @ORM\JoinTable(name="user_group_assoc")
      */
     public $groups;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Mission::class, mappedBy="owner")
+     */
+    private $missions;
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->missions = new ArrayCollection();
+    }
+
+    /**
+     * @return Collection|Mission[]
+     */
+    public function getMissions(): Collection
+    {
+        return $this->missions;
+    }
+
+    public function addMission(Mission $mission): self
+    {
+        if (!$this->missions->contains($mission)) {
+            $this->missions[] = $mission;
+            $mission->setOwner($this);
+        }
+
+        return $this;
+    }
+
+    public function removeMission(Mission $mission): self
+    {
+        if ($this->missions->removeElement($mission)) {
+            // set the owning side to null (unless already changed)
+            if ($mission->getOwner() === $this) {
+                $mission->setOwner(null);
+            }
+        }
+
+        return $this;
+    }
 }
