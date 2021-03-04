@@ -1,0 +1,53 @@
+umbrella:
+    children:
+        about:
+            icon: mdi mdi-lifebuoy
+            route: app_admin_default_about
+
+        datatable:
+            icon: uil-table
+            children:
+                table:
+                    route: app_admin_datatable_table
+                table_2:
+                    route: app_admin_datatable_table2
+                table_3:
+                    route: app_admin_datatable_table3
+                table_api:
+                    route: app_admin_datatable_tableapi
+                table_tree:
+                    route: app_admin_datatable_tabletree
+
+        menu:
+            icon: uil-bars
+            route: app_admin_menu_howto
+
+        forms:
+            icon: uil-document-layout-center
+            route: app_admin_form_index
+
+        notification:
+            icon: uil-bell
+            route: app_admin_notification_howto
+
+        tabs:
+            icon: uil-layers-alt
+            route: app_admin_tabs_index
+
+advanced:
+    children:
+        maker:
+            icon: mdi mdi-console-line
+            route: app_admin_maker_index
+        config_reference:
+            icon: mdi mdi-cogs
+            route: app_admin_umbrellaconfig_index
+admin:
+    children:
+        users:
+            icon: uil-user
+            route: umbrella_admin_user_index
+
+        groups:
+            icon: uil-users-alt
+            route: umbrella_admin_usergroup_index
