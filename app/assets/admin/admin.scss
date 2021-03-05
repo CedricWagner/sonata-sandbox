@@ -1,0 +1,105 @@
+//Core files
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+// @import "~umbrella_admin/scss/";
+@import "./variables";
+@import "~bootstrap/scss/bootstrap";
+
+// ~umbrella_admin/scss/Structure
+@import "~umbrella_admin/scss/structure/general";
+@import "~umbrella_admin/scss/structure/left-menu";
+@import "~umbrella_admin/scss/structure/topbar";
+//@import "~umbrella_admin/scss/structure/right-sidebar";
+@import "~umbrella_admin/scss/structure/page-head";
+//@import "~umbrella_admin/scss/structure/footer";
+//@import "~umbrella_admin/scss/structure/horizontal-nav";
+
+
+//Fonts
+@import "~umbrella_admin/scss/fonts/nunito";
+@import '~@mdi/font/scss/materialdesignicons.scss';
+@import '~@iconscout/unicons/css/animation.css';
+@import '~@iconscout/unicons/css/before.css';
+@import '~@iconscout/unicons/css/line.css';
+
+//~umbrella_admin/scss/Components
+@import "~umbrella_admin/scss/components/mixins";
+@import "~umbrella_admin/scss/components/accordions";
+@import "~umbrella_admin/scss/components/avatar";
+@import "~umbrella_admin/scss/components/breadcrumb";
+@import "~umbrella_admin/scss/components/buttons";
+@import "~umbrella_admin/scss/components/badge";
+@import "~umbrella_admin/scss/components/card";
+@import "~umbrella_admin/scss/components/dropdown";
+//@import "~umbrella_admin/scss/components/docs";
+@import "~umbrella_admin/scss/components/forms";
+@import "~umbrella_admin/scss/components/modal";
+@import "~umbrella_admin/scss/components/nav";
+@import "~umbrella_admin/scss/components/pagination";
+@import "~umbrella_admin/scss/components/popover";
+//@import "~umbrella_admin/scss/components/print";
+@import "~umbrella_admin/scss/components/progress";
+@import "~umbrella_admin/scss/components/reboot";
+//@import "~umbrella_admin/scss/components/ribbons";
+@import "~umbrella_admin/scss/components/switch";
+@import "~umbrella_admin/scss/components/tables";
+@import "~umbrella_admin/scss/components/type";
+@import "~umbrella_admin/scss/components/utilities";
+//@import "~umbrella_admin/scss/components/widgets";
+//@import "~umbrella_admin/scss/components/social";
+//@import "~umbrella_admin/scss/components/steps";
+@import "~umbrella_admin/scss/components/spinner";
+//@import "~umbrella_admin/scss/components/hero";
+@import "~umbrella_admin/scss/components/toolbar";
+@import "~umbrella_admin/scss/components/logo";
+@import "~umbrella_admin/scss/components/umbrellafile";
+@import "~umbrella_admin/scss/components/umbrellacollection";
+
+//Pages
+@import "~umbrella_admin/scss/pages/authentication";
+//@import "pages/~umbrella_admin/scss/components-demo";
+//@import "pages/error";
+//@import "pages/faq";
+//@import "pages/maintenance";
+//@import "pages/tasks";
+//@import "pages/email";
+//@import "pages/timeline";
+
+
+// Vendors
+@import "~umbrella_core/core";
+
+//@import "vendor/daterangepicker";
+//@import "vendor/bootstrap-timepicker.min";
+//@import "vendor/jquery.bootstrap-touchspin.min";
+
+
+// ~umbrella_admin/scss/Plugins
+@import "~umbrella_admin/scss/plugins/treegrid";
+//@import "~umbrella_admin/scss/plugins/apexcharts";
+//@import "~umbrella_admin/scss/plugins/britechart";
+//@import "~umbrella_admin/scss/plugins/calendar";
+//@import "~umbrella_admin/scss/plugins/chartjs";
+@import "~umbrella_admin/scss/plugins/datatable";
+//@import "~umbrella_admin/scss/plugins/daterange";
+@import "~umbrella_admin/scss/plugins/datepicker";
+@import "~umbrella_admin/scss/plugins/datetimepicker";
+@import "~umbrella_admin/scss/plugins/dragula";
+//@import "~umbrella_admin/scss/plugins/dropzone";
+//@import "~umbrella_admin/scss/plugins/form-wizard";
+//@import "~umbrella_admin/scss/plugins/maps";
+@import "~umbrella_admin/scss/plugins/metis-menu";
+@import "~umbrella_admin/scss/plugins/select2";
+@import "~umbrella_admin/scss/plugins/simplebar";
+@import "~umbrella_admin/scss/plugins/toast";
+@import "~umbrella_admin/scss/plugins/confirm";
+//@import "~umbrella_admin/scss/plugins/bootstrap-touchspin";
+//@import "~umbrella_admin/scss/plugins/bootstrap-timepicker";
+//@import "~umbrella_admin/scss/plugins/summernote";
+//@import "~umbrella_admin/scss/plugins/simplemde";
+//@import "~umbrella_admin/scss/plugins/typehead";
+//@import "~umbrella_admin/scss/plugins/sparklines";
+//@import "~umbrella_admin/scss/plugins/rateit";
+//@import "~umbrella_admin/scss/plugins/ion-rangeslider";
+//@import "~umbrella_admin/scss/plugins/frappe-gantt";
+

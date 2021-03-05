@@ -1,0 +1,16 @@
+umbrella_core:
+  file:
+    flystorage: default.storage
+
+umbrella_admin:
+  menu:
+    file: "../config/menu/admin_sidebar.yml"
+  theme:
+    name: "Admin"
+  assets:
+    script_entry: admin
+    stylesheet_entry: admin
+  notification:
+    provider: App\Notification\NotificationProvider
+    poll_interval: 10
+
