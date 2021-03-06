@@ -43,6 +43,16 @@ class Mission
      */
     public $owner;
 
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $intro;
+
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $content;
+
     public function getTitle(): ?string
     {
         return $this->title;
@@ -75,6 +85,30 @@ class Mission
     public function setOwner(?User $owner): self
     {
         $this->owner = $owner;
+
+        return $this;
+    }
+
+    public function getIntro(): ?string
+    {
+        return $this->intro;
+    }
+
+    public function setIntro(?string $intro): self
+    {
+        $this->intro = $intro;
+
+        return $this;
+    }
+
+    public function getContent(): ?string
+    {
+        return $this->content;
+    }
+
+    public function setContent(?string $content): self
+    {
+        $this->content = $content;
 
         return $this;
     }
