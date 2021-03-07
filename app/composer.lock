@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "60af9a3dccdb951d183c7ad37c97659b",
+    "content-hash": "643b1bf4ddca5005ff354d2292b747a4",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -50,6 +50,47 @@
                 "transliterator"
             ],
             "time": "2020-01-14T16:39:13+00:00"
+        },
+        {
+            "name": "cedricwagner/page-editor-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CedricWagner/page-editor-bundle.git",
+                "reference": "4f499cf0c96fd4af17c1f6030e92b5d9d4b7d1ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CedricWagner/page-editor-bundle/zipball/4f499cf0c96fd4af17c1f6030e92b5d9d4b7d1ce",
+                "reference": "4f499cf0c96fd4af17c1f6030e92b5d9d4b7d1ce",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": "^2.8",
+                "php": ">=7.4.0",
+                "symfony/form": "^4.0|^5.0",
+                "twig/twig": "^2.5|^3.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "CedricWagner\\PageEditorBundle\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cédric Wagner",
+                    "email": "cedricwagner@free.fr"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/CedricWagner/page-editor-bundle/tree/master",
+                "issues": "https://github.com/CedricWagner/page-editor-bundle/issues"
+            },
+            "time": "2021-03-07T20:49:14+00:00"
         },
         {
             "name": "composer/package-versions-deprecated",
@@ -9208,6 +9249,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "cedricwagner/page-editor-bundle": 20,
         "umbrella2/adminbundle": 20,
         "umbrella2/corebundle": 20
     },

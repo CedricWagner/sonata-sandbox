@@ -6,6 +6,7 @@
         "php": ">=7.4",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "cedricwagner/page-editor-bundle": "dev-master",
         "doctrine/doctrine-fixtures-bundle": "^3.3",
         "liip/imagine-bundle": "^2.3",
         "sensio/framework-extra-bundle": "^5.5",
@@ -93,5 +94,11 @@
             "allow-contrib": "true",
             "require": "5.2.*"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:CedricWagner/page-editor-bundle.git"
+        }
+    ]
 }

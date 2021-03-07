@@ -5,3 +5,5 @@ twig:
     exception_controller: null
     form_themes:
         - '@UmbrellaCore/Form/layout.html.twig'
+    paths:
+        '%kernel.project_dir%/vendor/cedricwagner/page-editor-bundle/templates': PageEditorBundle

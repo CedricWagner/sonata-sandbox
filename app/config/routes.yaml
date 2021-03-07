@@ -16,3 +16,7 @@ admin_:
   resource: "../src/Controller/Admin/"
   type: annotation
   prefix: /admin
+
+cedricw_page_editor_:
+  resource: "@PageEditorBundle/Resources/config/routing.yml"
+  prefix: /
